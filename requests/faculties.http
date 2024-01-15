@@ -1,0 +1,36 @@
+@api = http://localhost:4000/api/facultades
+
+GET {{api}}
+ 
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombreFac": "FISEI",
+    "descripcionFac": "Facultad de ingenierias"
+}
+
+###
+GET {{api}}/38
+
+###
+POST {{api}}/byName 
+Content-Type: application/json
+
+{
+    "nombreFac": "FISEI"
+}
+
+###
+DELETE {{api}}/34
+
+###
+PUT {{api}}/38
+Content-Type: application/json
+
+{
+  "nombreFac": "FISEI",
+  "descripcionFac": "Facultad de Ingenierias",
+  "idAdminPer": 20
+}

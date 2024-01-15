@@ -1,0 +1,25 @@
+@api = http://localhost:4000/api/estudiantes
+
+### obteniento la lista de todos los estudiantes que hay
+GET {{api}}
+### obteniendo un estudiante por id
+GET {{api}}/1
+### obteniendo un estudiante por nombre
+POST {{api}}/byName
+Content-Type: application/json
+
+{
+  "nombreEst": "Lenin"
+}
+### actualizando un estudiante
+PUT {{api}}/5
+Content-Type: application/json
+
+{
+  "cedulaEst": "19000",
+  "nombreEst": "Lenin Moreno",
+  "emailEst": "lenin@gmail.com",
+  "idCarreraPer": 8
+}
+### eliminando un estudiante
+DELETE {{api}}/20

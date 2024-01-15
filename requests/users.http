@@ -1,0 +1,42 @@
+@api = http://localhost:4000/api/usuarios
+
+GET {{api}} 
+
+###
+GET {{api}}/admin
+
+###
+GET {{api}}/secre 
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombreUsuario": "usuario5",
+    "emailUsuario": "usuario8005@uta.edu.ec",
+    "rolUsuario": "SECRETARIA"
+}
+
+###
+GET {{api}}/21
+
+###
+POST {{api}}/byName
+Content-Type: application/json
+ 
+{
+    "nombreUsuario": "Lenin"
+}
+
+###
+DELETE {{api}}/17
+
+### 
+PUT {{api}}/9
+Content-Type: application/json
+
+{
+    
+    "rolUsuario": "SECRETARIA"
+}
